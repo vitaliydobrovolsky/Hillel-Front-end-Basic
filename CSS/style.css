@@ -1,0 +1,64 @@
+h1{
+    font-size: 42px;
+    color:blueviolet;
+    margin: 100px;
+    font-style: oblique;
+    text-indent: 10px;
+    text-align: center;
+    background-color: chartreuse;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        margin: 5px; 
+        background-color: rgb(238, 138, 102);       
+        
+    }
+
+    body{
+        background-color: antiquewhite;
+    }
+
+
+    *{
+                margin: 1%;
+    }
+
+    h2{
+        margin: 50px;
+        text-align: center;
+        color: brown;
+        background-color: fuchsia;
+    }
+    
+    li{
+        list-style: circle;
+        font-style: oblique;
+    }
+
+    .phone-number {
+        font-style: oblique;
+        color: rgb(43, 92, 138);
+
+    }
+
+    .links {
+        font-size: large;
+        background-color: rgb(238, 138, 102);
+    }
+    
+    a[target="_blank"] {
+        color: rgb(67, 81, 211);
+    }
+
+    html {scroll-behavior: smooth;}
+
+    #lorem {
+        background-color: aliceblue;
+    }
+
+    #selectors {
+        background-color: deepskyblue;
+    }
+   
