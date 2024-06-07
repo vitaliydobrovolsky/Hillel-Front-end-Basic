@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+.img5, .img6{
+    width: 100%;
+}
+
+.container, .container1 {
+    width: 83.3%;
+    margin: 12px auto;
+    height: 75.37%;    
+}
+
+.container {
+    background-color: rgb(248, 248, 248);      
+}
+
+.container1 {    
+    margin-top: 30px;
+    height: 53px;
+}
+
+.left_col, .right_col {
+    display: inline-block;    
+}
+
+.right_col {
+    width: 42.3%;     
+}
+
+.left_col {
+    width: 57%;    
+    vertical-align: top;
+}
+
+.left_col h4 {
+    font-size: 14px;
+    padding-bottom: 7px;
+    margin-left: 43px;
+    padding-top: 68px;
+   }
+
+.left_col h1 {
+    font-size: 70px;
+    padding-bottom: 5px;  
+    margin-left: 40px;    
+}
+
+.left_col p {
+    font-size: 14px;
+    padding-bottom: 44px;
+    margin-left: 43px;
+}
+
+.shop_button {
+    margin-bottom: 85px;
+    margin-left: 41px;       
+    height: 40px;  
+    width: 140px;    
+    border: none;
+}
+
+.logo, .login, .nav {
+ display: inline-block;
+}
+
+.button1{   
+    height: 35px;
+    width: 100px;    
+    border: none;
+}
+
+
+.nav {
+    margin-left: 229px;
+    margin-right: 320px; 
+    padding-top: 0;
+    vertical-align: top;
+    padding-top: 8px;              
+}
+
+a {
+    margin-right: 50px;    
+    font-size: 16px;       
+}
+
+.login {
+    margin-bottom: 18px;   
+}
+
+.planet {
+    color: green;
+}
+
+.logo {
+    padding-top: 0;
+}
+
