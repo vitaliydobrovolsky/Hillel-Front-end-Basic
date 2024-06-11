@@ -28,6 +28,7 @@
 
 .right_col {
     width: 42.3%;     
+    position: relative;
 }
 
 .left_col {
@@ -98,3 +99,10 @@ a {
     padding-top: 0;
 }
 
+.right_col .img14 {
+    position: absolute;
+    width: 26.6%;
+    left: 0;
+    bottom: 3.333%;
+    left: 10.8%;
+}
