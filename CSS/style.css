@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.right_top button {
+    border: none;
+    background-color:white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: cera;
+    
+}
+
+.right_top .button_pl {    
+    margin-right: 4.4%;
+}
+
+.right_top .button_new {
+    margin-right:4.77% ;
+}
+
+.right_top .button_sale {
+    margin-right:45.9% ;
+}
+
+.right_top {
+    margin-top:10.54% ;    
+    margin-bottom: 1.8%;
+    width: 58.19%;
+    
+}
+
+@font-face {
+    font-family:"cera" ;
+    src: url(../fonts/Cera\ Pro\ Light.otf);
+}
+
+.left_top ul {       
+    padding-bottom: 100%;
+        padding-left: 5%;           
+        list-style-type: none;
+        font-size: 15px;
+        font-family: cera;
+        font-weight: 400; 
+    }
+
+.left_top ul li {
+    padding: 5% 0;    
+}
+
+.left_top p {
+    padding-top: 0.84%;
+    font-size: 18px;    
+    font-family: cera;
+    font-weight: 700;
+    display: inline;
+    margin-top:0.42% ;
+    padding-left: 1.08%;
+}
+
+.left_top {
+    margin-top:10.54% ;
+    margin-left: 8.12% ;
+    background-color: #FBFBFB;
+    width:21.52% ;
+    height: 46.57%;
+    margin-right: 3%;
+    
+    
+}
+
+.left_bottom {
+    height: 28.97%;
+    width:21.52% ;
+    margin-left: 8.12% ;
+    margin-right: 3.47%;
+}
+
+.right_down  .block {
+    height:21.57% ;
+    width: 17.9%;
+    background-color: #FBFBFB;     
+    margin-right: 2.29%;   
+    margin-top: 5.59%;    
+}
+
+.right_down  .block img {
+    height:100% ;
+    width: 100%;
+}
+
+.right_down .block .img_disc {
+    height: 9.6% ;
+    width: 31%;
+    position: absolute;
+    bottom: 95.33%;
+    left: 0px;
+}
+
+.right_down .block-3 {
+    position: relative;
+}
+
+.right_down {
+    font-family: cera;
+    font-size: 16px;
+    font-weight: 400;
+    height:71.60 ;    
+}
+
+
+
+.left_top, .right_top {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.left_top {
+    float: left;
+}
+
+.block-2 {
+      float: left;
+}
+
+.block-3 {
+    float: left;
+}
+
+.block-1 {
+    float: left;
+}
+
+.block-4 {
+    float: left;
+}
+
+.block-5 {
+    float: left;
+}
+
+.block-6 {
+    float: left;
+}
+
+.block-7 {
+    float: left;
+}
+
+.block-8 {
+    float: left;
+}
+
+.block-9 {
+    float: left;
+}
+
+.left_bottom {
+    float: left;    
+}
+
+
+
+/*.cont1 .block {
+    display: inline-block;
+}
+
+.cont2 .block {
+    display: inline-block;
+}
+
+.cont3 .block {
+    display: inline-block;
+}*/
+
+
+.USD {
+    color: green;
+}
+
+.cont2 {
+  
+}
+
+.clear-fix {
+    clear: both;
+}
+
+    .page {
+        margin-top: 5.54%;   
+        margin-left: 77.77%;       
+    }
+
+main {
+    background-color: FFFFFF;
+}
+
+.left_top button:focus {
+    color: darkgreen;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.right_top button:focus {
+    color: darkgreen;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.left_top .button_top {
+    border: none;
+    background-color: #FBFBFB;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: cera;
+}
