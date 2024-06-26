@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 12px 18px;
+    background-color: lightgoldenrodyellow;
+    }
+
+    header .logo {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 24px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header li {
+        list-style: none;
+        padding: 10px;
+        position: relative;
+    }
+
+    header li a {
+        text-decoration: none;        
+    }
+
+    header ul>li>ul {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        position: absolute;
+        white-space: nowrap;
+        /*display: none;*/
+        /*opacity: 0;*/
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    header ul>li:hover > ul {
+        /*display: block;*/
+        /*opacity: 1 ;*/
+        visibility: visible;
+    }
+
+    .video-container {
+        width: 100%;
+        position: relative;
+    }
+
+    video {
+        width: 100%;
+    }
