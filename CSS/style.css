@@ -87,15 +87,15 @@
 }
 
 .right_down  .block img {
-    height:100% ;
+    height: 100%;
     width: 100%;
 }
 
 .right_down .block .img_disc {
-    height: 9.6% ;
+    height: 9% ;
     width: 31%;
     position: absolute;
-    bottom: 95.33%;
+    bottom: 92.33%;
     left: 0px;
 }
 
@@ -216,4 +216,44 @@ main {
     font-size: 15px;
     font-weight: 400;
     font-family: cera;
+}
+
+.right_down .cont1 .block-2 {
+    position: relative;
+}
+
+.right_down .block-2 .menu {
+    display: flex;
+    flex-direction: row;
+        
+}
+
+.right_down .cont1 .block-2 .menu {
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+    height: 15%;
+    
+}
+
+.right_down .cont1 .block-2 .menu img {
+    padding: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+p { 
+    padding-top: 7%;
+}
+
+
+
+.right_down .block img:hover {
+   transform: scale(1.1);  
+}
+
+.line img {
+    position: absolute;
+    max-height: 1px;
+    top: 0;
 }
