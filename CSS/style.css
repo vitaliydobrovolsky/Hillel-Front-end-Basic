@@ -1,0 +1,133 @@
+:root {
+   font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: coral;
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header .logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: blue;
+}
+
+header nav a {
+    text-decoration: none;
+    color: brown;
+    padding: 0 10px;
+    font-size: 18px;
+    
+}
+
+header nav a:hover {
+    border-bottom: 2px solid darkviolet ;
+    transition: 2s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .socials {
+    display: flex;
+    align-items: center;
+}
+
+header .socials img {
+    width: 24px;
+}
+
+.upper-wrapper {
+    background-color: lightcyan;
+    height: 200vh;
+    position: relative;
+    padding-top: 63px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    background-color: lightcoral;
+    height: 100%;
+    position: relative;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.box-1 {
+    background-color: green;
+    position: absolute;
+    right: 0;
+    transition: 1s ease-out;
+}
+
+.box-2 {
+    background-color: yellow;
+    position: fixed;
+    top: 150px;
+    left: 300px;
+}
+
+.box-2:hover+.box-3 {
+    left: -100px;
+}
+
+.box-3 {
+    background-color : rgb(26, 25, 25);
+    position: absolute;
+    left: 0;
+    transition: 2s ease-in-out;
+}
+
+.box-4 {
+    background-color: chartreuse;
+}
+
+.box-5 {
+    background-color: darkcyan;
+}
+
+.box-6 {
+    background-color: rgb(110, 124, 96);
+}
+
+.lower-wrapper .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lower-wrapper .wrapper .box {
+    width: 30%;
+}
+
+.li ul li {
+    font-size: 2rem;
+
+}
