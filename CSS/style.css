@@ -39,7 +39,7 @@ header  .container1 .nav ul li a {
     list-style: none;
     padding: ;
     z-index: 2;
-    top: 10vh;
+    top: 10.5vh;
     transition: 1s ease-in-out;
     left: -2vw;
 }
@@ -79,12 +79,12 @@ header  .container1 .nav ul li a {
     position: absolute;
     visibility: hidden;
     top: 0vh;
-    left: 13vw;
-    transition: 1s ease-in-out;  
+    left: 12.5vw;
+    transition: 1s ease-in;  
 
 }
 
-.container1 .nav .plant-menue li:hover>.sub-priming {
+.container1 .nav .plant-menue>.priming:hover>.sub-priming {
     visibility: visible;
 }
 
@@ -99,12 +99,12 @@ header  .container1 .nav ul li a {
 .container1 .nav .plant-menue .line {
     position: absolute;
     top: -4vh;
-    left: 3.7vw;
+    left: 3.8vw;
        
 }
 
-.container1 .nav .plant-menue .priming img {
-    width: 6vw; 
+.container1 .nav .plant-menue  img {
+    width: 5vw; 
     height: 0.3vh;
 }
 
