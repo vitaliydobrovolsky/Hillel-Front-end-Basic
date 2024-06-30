@@ -11,7 +11,139 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto";
+}
+
 .container {
     max-width: 65.27%;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.button {
+    border-radius: 40px;
+    padding: 11px 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrate";
+    font-size: 0.875rem;
+    background-color: transparent;
+}
+.button.bordered-white {
+    border: 2px solid white;
+}
+
+.button.bg-red {
+    background-color: red;
+    font-weight: bold;
+}
+
+.button.badge {
+   padding: 4px 14px;
+   font-size: 0.625rem;
+   text-transform: uppercase;
+   background-color: red;
+   display: inline-block;
+}
+
+.hero-section {
+    background-image: url(../img/img3.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 95px;
+}
+
+header .header-logo a {
+    font-family: "Montserrate";
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    font-family: "Montserrate";
+    max-width: 500px;
+    padding-bottom: 28px;
+}
+
+.hero-content h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 33px;
+}
+
+section>h2 {
+    font-family: "Montserrat";
+    font-size: 1.625rem;
+    color: #444;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+
+.cards-wrapper {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 85px;
+}
+
+.card {
+    width: calc(33.333% - 10px);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 24px;
+    color: white;
+}
+
+.cards-wrapper .card img {
+    max-width: 100%;
+    object-fit: cover;
+   }
+
+.card .card-content .badge {
+    margin-bottom: 15px;
+}
+
+.card .card-content h3 {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.card .card-content p {
+    color: antiquewhite;
+    font-size: 0.875rem;
+    
 }
