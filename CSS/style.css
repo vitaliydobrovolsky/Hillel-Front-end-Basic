@@ -1,0 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+
+    }
+:root {
+    font-family: "cera";
+}
+
+@font-face {
+    font-family: "cera";
+    src: url(../font/Cera_Pro_Light.otf);
+}
+.img5, .img6{
+    width: 100%;
+}
+
+header  .container1 .nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "cera";
+    color: black;
+}
+
+.container1 ul .menue {
+    list-style: none;      
+    padding:1.8vw ; 
+    position: relative;   
+}
+
+.container1 ul li:hover {
+    font-weight: 700; 
+    color: #3D3D3D; 
+}
+
+.container1 .nav .plant-menue {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF6EE;
+    visibility: hidden;
+    position: absolute;
+    list-style: none;
+    padding: ;
+    z-index: 2;
+    top: 10.5vh;
+    transition: 1s ease-in-out;
+    left: -2vw;
+}
+
+.container1 .nav .plant-menue li {
+    padding: 0.75vh 6.1vw 0.75vh 0.97vw;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    font-family: cera;
+}
+
+.container1 .nav .menue li:hover {
+    background-color: #1A712A;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.container1 .nav .plant:hover>.plant-menue {
+    visibility: visible;
+    
+}
+
+.fwd-arr, .aft-arr {
+    visibility: hidden;
+}
+
+.container1 .nav .plant-menue .priming:hover>.fwd-arr {
+    visibility: visible;   
+}
+
+.container1 .nav .plant-menue .sub-priming {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF6EE;
+    position: absolute;
+    visibility: hidden;
+    top: 0vh;
+    left: 12.5vw;
+    transition: 1s ease-in;  
+
+}
+
+.container1 .nav .plant-menue>.priming:hover>.sub-priming {
+    visibility: visible;
+}
+
+.container1 .nav .plant-menue li a:hover {
+    color: #FFFFFF;
+}
+
+.container1 .nav .plant-menue .sub-priming li {
+    padding: 0.75vh 1.1vw 0.75vh 0.97vw;
+}
+
+.container1 .nav .plant-menue .line {
+    position: absolute;
+    top: -4vh;
+    left: 3.8vw;
+       
+}
+
+.container1 .nav .plant-menue  img {
+    width: 5vw; 
+    height: 0.3vh;
+}
+
+.container1  {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    
+}
+
+.button1 {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.container1 .nav ul {
+    display: flex;      
+    
+}
+
+h1 {
+    font-family: "cera";
+    font-weight: 900;
+}
+
+.container2, .container1 {
+    width: 83.3%;
+    margin: 12px auto;
+    height: 75.37%;    
+}
+
+.container2 {
+    background-color: rgb(248, 248, 248);      
+}
+
+.container1 {    
+    margin-top: 30px;
+    height: 53px;
+}
+
+.left_col, .right_col {
+    display: inline-block;    
+}
+
+.right_col {
+    width: 42.3%;     
+    position: relative;
+}
+
+.left_col {
+    width: 57%;    
+    vertical-align: top;
+}
+
+.left_col h4 {
+    font-size: 14px;    
+    margin-left: 43px;
+    padding-top: 68px;
+    color: 3D3D3D;
+   }
+
+.left_col h1 {
+    font-size: 70px;
+    padding-bottom: 5px;  
+    margin-left: 40px;    
+}
+
+.left_col p {
+    font-size: 14px;
+    padding-bottom: 44px;
+    margin-left: 43px;
+    color: #727272;
+    line-height: 24px;
+}
+
+.shop_button {
+    margin-bottom: 85px;
+    margin-left: 41px;       
+    height: 40px;  
+    width: 140px;    
+    border: none;
+}
+
+
+.button1{   
+    height: 35px;
+    width: 100px;    
+    border: none;
+}
+
+.planet {
+    color: green;
+}
+
+.logo {
+    padding-top: 0;
+}
+
+.right_col .img14 {
+    position: absolute;
+    width: 26.6%;
+    left: 0;
+    bottom: 3.333%;
+    left: 10.8%;
+}
+
+
+/*section 2*/
+
+
+
+.right_top button {
+    border: none;
+    background-color:white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: cera;
+    
+}
+
+.right_top .button_pl {    
+    margin-right: 4.4%;
+}
+
+.right_top .button_new {
+    margin-right:4.77% ;
+}
+
+.right_top .button_sale {
+    margin-right:45.9% ;
+}
+
+.right_top {
+        
+    margin-bottom: 1.8%;
+    width: 58.19%;
+    
+}
+
+@font-face {
+    font-family:"cera" ;
+    src: url(../fonts/Cera\ Pro\ Light.otf)
+}
+
+.left_top ul {       
+    padding-bottom: 100%;
+        padding-left: 30px;           
+        list-style-type: none;
+        font-size: 15px;
+        font-family: cera;
+        font-weight: 400; 
+    }
+
+.left_top ul li {
+    padding: 5% 0;    
+}
+
+.second {
+    margin-top: 46px;
+}
+
+.left_top p {
+    padding-top: 14px;
+    font-size: 18px;    
+    font-family: cera;
+    font-weight: 700;
+    display: inline;
+    margin-top:0.42% ;
+    padding-left: 18px;
+}
+
+.left_top {
+    
+    margin-left: 8.12% ;
+    background-color: #FBFBFB;
+    width:21.52% ;
+    height: 46.57%;
+    margin-right: 3%;  
+    
+}
+
+.left_bottom {
+    height: 28.97%;
+    width:21.52% ;
+    margin-left: 8.12% ;
+    margin-right: 3.47%;
+}
+
+.right_down  .block {
+    height:21.57% ;
+    width: 17.9%;       
+    margin-right: 2.29%;   
+    margin-top: 5.1%;        
+}
+
+.right_down  .block .cardimg img {
+    height: 100%;
+    width: 100%;
+    background-color: #FBFBFB;  
+    
+}
+
+.cardimg {
+    background-color: #FBFBFB;  
+}
+
+.right_down .block .img_disc {
+    height: 9% ;
+    width: 31%;
+    position: absolute;
+    bottom: 92.33%;
+    left: 0px;
+}
+
+.right_down .block-3 {
+    position: relative;
+}
+
+.right_down {
+    font-family: cera;
+    font-size: 16px;
+    font-weight: 400;
+    height:71.60 ;    
+}
+
+.left_top, .right_top {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.left_top {
+    float: left;
+}
+
+.block-2 {
+      float: left;
+}
+
+.block-3 {
+    float: left;
+}
+
+.block-1 {
+    float: left;
+}
+
+.block-4 {
+    float: left;
+}
+
+.block-5 {
+    float: left;
+}
+
+.block-6 {
+    float: left;
+}
+
+.block-7 {
+    float: left;
+}
+
+.block-8 {
+    float: left;
+}
+
+.block-9 {
+    float: left;
+}
+
+.left_bottom {
+    float: left;    
+}
+
+.USD {
+    color: green;
+}
+
+.cont2 {
+  
+}
+
+.clear-fix {
+    clear: both;
+}
+
+    .page {
+        margin-top: 5.54%;   
+        margin-left: 77.77%;       
+    }
+
+
+
+.left_top button:focus {
+    color: darkgreen;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.right_top button:focus {
+    color: darkgreen;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.left_top .button_top {
+    border: none;
+    background-color: #FBFBFB;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: cera;
+}
+
+.right_down .cont1 .block-2 {
+    position: relative;
+}
+
+.right_down .block-2 .menu {
+    display: flex;
+    flex-direction: row;
+        
+}
+
+.right_down .cont1 .block-2 .menu {
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+    height: 15%;
+    
+}
+
+.right_down .cont1 .block-2 .menu img {
+    padding: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.second .right_down p { 
+    padding-top: 12px;
+}
+
+
+
+.right_down .block img:hover {
+   transform: scale(1.1);  
+}
+
+.line img {
+    position: absolute;
+    max-height: 1px;
+    top: 0;
+}
+
+
+
+/*section 3*/
+
+
+
+.container3 {    
+    width: 83.47%;
+    height: 86.62%;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 146px;    
+}
+
+
+.img_1 {
+    width: 100%;    
+}
+
+.upper3 {
+    display: flex;    
+    justify-content: space-between;
+    margin-bottom: 9.58%;
+    margin-top: 3.6%;
+
+}
+
+.wrapper3 .upper_button3 {
+    border: none;
+    background: none;
+    width: 9.72%;
+    height: 3.9%;
+    margin-top: 12%;
+    
+}
+
+.upper_text {
+    width: 100%;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-basis: 100%;
+    margin-right: 2.9%;
+}
+
+.wrapper3 {
+   display: flex;
+   align-items: center;
+   width: 30%;
+   flex-basis: 57.22%;
+   background-color: #FBFBFB;
+   
+}
+
+@font-face {
+    font-family: "cera";
+    src: url(../font/Cera_Pro_Light.otf);
+}      
+
+.third .container3 h4 {
+    font-family: cera;
+    font-size: 18px;
+   font-weight: 900;
+    margin-bottom: 3%;
+}
+
+p {
+    font-family: cera;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0.6%;
+    margin-bottom: 2.7%;
+    fon
+}
+
+.wrapper_2 {
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+.third h3 {    
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "cera";
+    text-align: center;
+    margin-bottom: 15px;
+   color: #3D3D3D;
+   
+}
+
+.lower .topic .h3_par {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-top: 0;
+    font-size: 14px;
+    font-family: "cera";
+    font-weight: 400;
+    line-height: 24px;
+    color:     #727272;
+}
+
+.lower .wrapper_2 .green {
+    color: green;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-family: cera;
+    font-size: 20px;
+    font-weight: 700;
+}
+.lower .lower_card {
+    flex-basis: 20%;
+}
+
+.lower .lower_card .lower_button3 {
+    border: none;
+    background: none;
+    width: 90px;
+    height: 16px;
+    font-family: cera;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+/*section4*/
+
+
+
+
+:root {
+    font-size: 16px;
+    font-family: "cera";
+}
+
+@font-face {
+    font-family: "cera";
+    src: url(../font/Cera_Pro_Light.otf);
+}
+
+.container4.top {
+    display: flex;
+    background-color: #FBFBFB;
+    max-height: 37.57vh;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+    justify-content: space-between;
+}
+
+/*.container4.middle {
+    display: flex;
+    background-color: #FBFBFB;
+    justify-content: space-between;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+}*/
+
+.container4.bottom {
+    display: flex;
+    background-color: #FBFBFB;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+}
+
+.container4.top {
+    margin-top: 100px;
+    padding-bottom: 37px;
+}
+
+.wrapper-login {
+    padding-right: 25px ;
+}
+
+.wrapper {
+    max-width: 17%;
+    position: relative;
+    padding-left: 25px;
+}
+
+.container4 h3 {
+    font-size: 1.0625rem;
+    font-weight: 700;    
+    padding-top: 134.55px;
+    padding-bottom: 9.04px;
+    color: #3D3D3D;
+}
+
+.container4.top h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #3D3D3D;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.container4.bottom h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #3D3D3D;
+    padding-top: 37px;
+    padding-bottom: 8px;
+}
+
+.container4 .wrapper p {
+    font-size: 0.875rem;
+    font-weight: 400;  
+    line-height: 22px;  
+    padding-bottom: 0px;
+    line-height: 22px;
+    max-width: 204px;
+    color: #727272;
+}
+
+
+
+.login {
+    font-size: 0.8125rem;
+    max-width: 354px;
+    line-height: 22px;
+    color: #727272;
+
+}
+
+.form {
+    padding-bottom: 16px;
+    max-width: 362px;
+    display: flex;
+    vertical-align: center;
+}
+
+.rect {
+    position: absolute;
+    top: 4vh;
+    left: -2.5vw;
+}
+
+
+
+.container4 .wrapper-login .form input{
+    font-size: 0.8125rem;
+    padding: 12px 95px 12px 11px;
+    border-radius: 6px;
+    border: transparent;
+    color: #727272;
+    font-family: "cera";
+    text-overflow: ellipsis;    
+    max-height: 40px;
+    width: 270px;
+}
+
+.container4.top .wr-1 {
+    background-image: url(../img/cactus1.png);
+    background-repeat: no-repeat;
+    background-size: 39%;
+    background-position: 17% 15%;
+
+}
+
+.container4.top .wr-2 {
+    background-image: url(../img/cactus2.png);
+    background-repeat: no-repeat;
+    background-size: 39%;
+    background-position: 17% 15%;
+
+}
+
+.container4.top .wr-3 {
+    background-image: url(../img/cactus3.png);
+    background-repeat: no-repeat;
+    background-size: 39%;
+    background-position: 17% 15%;
+}
+
+
+
+.button {
+    background-color: #46A358;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    border: transparent;
+    padding: 12px 26px 12px 26px;   
+    border-radius: 0px 6px 6px 0px; 
+    font-weight: 700;
+    max-width: 85px;
+    max-height: 40px;
+    cursor: pointer;
+}
+    
+
+.container4.middle-4 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    background: linear-gradient(to right, #EDF6EF, #52C368); 
+    justify-content: space-between;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+   }   
+
+.middlee {
+    display: flex;
+    align-items: center;
+    font-family: "cera";
+    font-size: 0.8125rem;    
+    color:  #3D3D3D; 
+    font-weight: 400;   
+}
+
+.middlee P {
+    padding-left: 9px;    
+    text-align: center;  
+}
+
+.container4.bottom {
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.container4.bottom li {
+    list-style: none;    
+}
+
+.container4.bottom li a {
+    text-decoration: none;
+    color: #3D3D3D;
+   font-weight: 400;
+   font-size: 0.875rem;
+   line-height: 30px;
+}
+
+.middlee.address {
+    max-width: 184px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.middlee.logo {
+    padding-left: 23px;
+}
+
+.middlee.phone {
+    padding-right:25px ;
+}
+
+
+
+.column.col1 {
+    padding-left: 25px;
+    padding-right: 152px;
+    padding-bottom: 29px;
+}
+
+.column.col2 {
+    padding-left: 25px;
+    padding-right: 124px;
+    padding-bottom: 29px;
+} 
+
+ .column.col3 {
+    padding-left: 25px;
+    padding-right: 159px;
+    padding-bottom: 29px;
+}
+
+
+
+.medialink  {
+    display: flex;
+    column-gap: 10px;            
+      
+}
+
+.medialink img {
+    max-width: 30px;
+    }
+
+    .bottom-line {
+        position: absolute;
+        bottom: -1.5%;       
+    }
+
+    .bottom-line>img {
+        max-width: 100%;          
+    }
+        
+    
+.footer4 .p4 {
+   font-size: 0.875rem;
+   text-align: center;
+   line-height: 30px;
+   color:  #3D3D3D;
+   font-weight: 400;
+   margin-bottom: 22px;
+   padding-top: 0;
+}

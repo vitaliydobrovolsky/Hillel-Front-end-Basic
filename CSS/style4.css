@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: "cera";
+}
+
+@font-face {
+    font-family: "cera";
+    src: url(../Font/Cera_Pro_Light.otf);
+}
+
+.container.top {
+    display: flex;
+    background-color: #FBFBFB;
+    max-height: 37.57vh;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+    justify-content: space-between;
+}
+
+.container.middle {
+    display: flex;
+    background-color: #FBFBFB;
+    justify-content: space-between;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+}
+
+.container.bottom {
+    display: flex;
+    background-color: #FBFBFB;
+    margin-left: 8.33%;      
+    max-width: 83.33%;
+}
+
+.container.top {
+    margin-top: 6.32%;
+    padding-bottom: 37px;
+}
+
+.wrapper-login {
+    padding-right: 25px ;
+}
+
+.wrapper {
+    max-width: 17%;
+    position: relative;
+    padding-left: 25px;
+}
+
+.container h3 {
+    font-size: 1.0625rem;
+    font-weight: 700;    
+    padding-top: 134.55px;
+    padding-bottom: 9.04px;
+    color: #3D3D3D;
+}
+
+.container.top h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #3D3D3D;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.container.bottom h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #3D3D3D;
+    padding-top: 37px;
+    padding-bottom: 8px;
+}
+
+.container .wrapper p {
+    font-size: 0.875rem;
+    font-weight: 400;  
+    line-height: 22px;  
+    padding-bottom: 0px;
+    line-height: 22px;
+    max-width: 204px;
+    color: #727272;
+}
+
+
+
+.login {
+    font-size: 0.8125rem;
+    max-width: 354px;
+    line-height: 22px;
+    color: #727272;
+
+}
+
+.form {
+    padding-bottom: 16px;
+    max-width: 362px;
+    display: flex;
+    vertical-align: center;
+}
+
+.rect {
+    position: absolute;
+    top: 4vh;
+    left: -2.5vw;
+}
+
+
+
+.container .wrapper-login .form input{
+    font-size: 0.8125rem;
+    padding: 12px 95px 12px 11px;
+    border-radius: 6px;
+    border: transparent;
+    color: #727272;
+    font-family: "cera";
+    text-overflow: ellipsis;    
+    max-height: 40px;
+    width: 270px;
+}
+
+.container.top .wr-1 {
+    background-image: url(../img/cactus1.png);
+    background-repeat: no-repeat;
+    background-size: 39%;
+    background-position: 17% 15%;
+
+}
+
+.container.top .wr-2 {
+    background-image: url(../img/cactus2.png);
+    background-repeat: no-repeat;
+    background-size: 39%;
+    background-position: 17% 15%;
+
+}
+
+.container.top .wr-3 {
+    background-image: url(../img/cactus3.png);
+    background-repeat: no-repeat;
+    background-size: 39%;
+    background-position: 17% 15%;
+
+}
+
+
+
+.button {
+    background-color: #46A358;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    border: transparent;
+    padding: 12px 26px 12px 26px;   
+    border-radius: 0px 6px 6px 0px; 
+    font-weight: 700;
+    max-width: 85px;
+    max-height: 40px;
+    cursor: pointer;
+}
+    
+
+.container.middle {
+    justify-content: space-between;
+    padding-top: 0;
+    background: linear-gradient(to right, #EDF6EF, #52C368); 
+   }
+
+.middle {
+    display: flex;
+    align-items: center;
+    font-family: "cera";
+    font-size: 0.8125rem;    
+    color:  #3D3D3D; 
+    font-weight: 400;   
+}
+
+.middle P {
+    padding-left: 9px;      
+}
+
+.container.bottom {
+    margin-bottom: 6px;
+}
+
+.container.bottom li {
+    list-style: none;    
+}
+
+.container.bottom li a {
+    text-decoration: none;
+    color: #3D3D3D;
+   font-weight: 400;
+   font-size: 0.875rem;
+   line-height: 30px;
+}
+
+.middle.address {
+    max-width: 184px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.middle.logo {
+    padding-left: 23px;
+}
+
+.middle.phone {
+    padding-right:25px ;
+}
+
+.column.col1 {
+    padding-left: 25px;
+    padding-right: 152px;
+    padding-bottom: 29px;
+}
+
+.column.col2 {
+    padding-left: 25px;
+    padding-right: 124px;
+    padding-bottom: 29px;
+} 
+
+ .column.col3 {
+    padding-left: 25px;
+    padding-right: 159px;
+    padding-bottom: 29px;
+}
+
+
+
+.medialink  {
+    display: flex;
+    column-gap: 10px;            
+      
+}
+
+.medialink img {
+    max-width: 30px;
+    }
+
+    .bottom-line {
+        position: absolute;
+        top: 93%;
+       
+    }
+
+    .bottom-line>img {
+        max-width: 83.33%;
+        margin-left: 8.33%;      
+
+    }
+        
+    
+
+
+footer p {
+   font-size: 0.875rem;
+   text-align: center;
+   line-height: 30px;
+   color:  #3D3D3D;
+   font-weight: 400;
+   margin-bottom: 22px;
+}
+
+
+
