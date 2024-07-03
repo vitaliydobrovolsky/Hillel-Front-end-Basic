@@ -8,11 +8,20 @@
     font-family: "cera";
 }
 
+
+
 @font-face {
     font-family: "cera";
     src: url(../font/Cera_Pro_Light.otf);
 }
-.img5, .img6{
+
+@font-face {
+    font-family: "cera_black";
+    src: url(../font/Fontspring-DEMO-cerapro-black.otf);
+}
+
+
+.img5, .img6 {
     width: 100%;
 }
 
@@ -56,10 +65,13 @@ header  .container1 .nav ul li a {
     font-family: cera;
 }
 
+
+
+
 .container1 .nav .menue li:hover {
     background-color: #1A712A;
-    font-weight: 700;
-    color: #FFFFFF;
+    font-weight: 700;    
+    
 }
 
 .container1 .nav .plant:hover>.plant-menue {
@@ -137,9 +149,10 @@ header  .container1 .nav ul li a {
     
 }
 
-h1 {
-    font-family: "cera";
+.first h1 {
+    font-family: "cera_black";
     font-weight: 900;
+    font-size: 70px;
 }
 
 .container2, .container1 {
@@ -198,6 +211,7 @@ h1 {
     height: 40px;  
     width: 140px;    
     border: none;
+    cursor: pointer;
 }
 
 
@@ -327,7 +341,7 @@ h1 {
     height: 9% ;
     width: 31%;
     position: absolute;
-    bottom: 92.33%;
+    bottom: 91%;
     left: 0px;
 }
 
@@ -394,11 +408,10 @@ h1 {
 
 .USD {
     color: green;
+    font-weight: 700;
 }
 
-.cont2 {
-  
-}
+
 
 .clear-fix {
     clear: both;
@@ -435,40 +448,71 @@ h1 {
     position: relative;
 }
 
-.right_down .block-2 .menu {
+.second .cardimg  .menu {
     display: flex;
     flex-direction: row;
-        
+    justify-content: space-between; 
+    max-width: 125px;
+    column-gap: 26px;   
+       
 }
 
-.right_down .cont1 .block-2 .menu {
+.right_down .cardimg  .menu {
     position: absolute;
-    bottom: 13%;
-    left: 20%;
-    height: 15%;
-    
+    bottom: -5%;
+    left: 29%;
+    height: 14%;    
 }
 
-.right_down .cont1 .block-2 .menu img {
-    padding: 30%;
-    width: 100%;
-    height: 100%;
+del {
+    color:     #CBCBCB;
+}
+
+.right_down .cardimg  .menu img {    
+    max-width: 20px;
+    max-height: 20px;
+    
 }
 
 .second .right_down p { 
     padding-top: 12px;
 }
 
+/*lesson  12*/
 
-
-.right_down .block img:hover {
-   transform: scale(1.1);  
+.cardimg {
+    position: relative;
 }
 
-.line img {
+.second .menu, .line {
+    visibility: hidden;
+    transition: 0.2s ;
+    } 
+
+.second .cardimg:hover .menu {
+   visibility: visible;
+}
+
+.second .quick_menu {
+    width: 35px;
+    height: 35px;
+    background-color: #FFFFFF;
+}
+
+.second .cardimg:hover .line {
+    visibility: visible;
+ }
+
+
+.second .cardimg .line img {
+    width: 100%;
     position: absolute;
     max-height: 1px;
     top: 0;
+}
+
+.second .vector:hover {
+    transform: scale(1.2);
 }
 
 
@@ -504,6 +548,7 @@ h1 {
     width: 9.72%;
     height: 3.9%;
     margin-top: 12%;
+    cursor: pointer;
     
 }
 
@@ -752,7 +797,7 @@ h5 {
 
 
 
-.button {
+.button4 {
     background-color: #46A358;
     font-size: 1.125rem;
     color: #FFFFFF;
@@ -770,6 +815,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     padding-top: 0;
+    padding-left: 23px;
     background: linear-gradient(to right, #EDF6EF, #52C368); 
     justify-content: space-between;
     margin-left: 8.33%;      
@@ -871,4 +917,31 @@ h5 {
    font-weight: 400;
    margin-bottom: 22px;
    padding-top: 0;
+}
+
+
+/*lesson 12*/
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button_top:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.toplink:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+.column li a:hover {
+    font-weight: 900;
+    
+}
+
+.lower_button3:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    text-decoration: underline;
 }
