@@ -10,6 +10,8 @@
 
 
 
+
+
 @font-face {
     font-family: "cera";
     src: url(../font/Cera_Pro_Light.otf);
@@ -867,6 +869,81 @@ h5 {
     padding-right:25px ;
 }
 
+/*lesson 13*/
+
+.assess {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container4.checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 23px;
+    background: linear-gradient(to right, #52C368, #EDF6EF); 
+    justify-content: space-between;
+    margin-left: 8.33%;      
+    max-width: 83.33%;    
+    padding-right: 20px;
+   }   
+
+   .checkbox-rect input {
+    display: none ;
+   }
+
+     
+
+   .checkbox-rect {
+    display: flex;
+    align-items: center;    
+   }
+
+   
+
+   .check-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: solid 3px white;
+    border-radius: 3px;    
+    margin-right: 10px; 
+    background-color: white;
+       }
+
+   .check-icon::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(49, 42, 42, 0.288);  
+    display: none;
+   }   
+
+   .checkbox-rect:hover {
+     color: darkblue;
+     font-weight: bold;       
+     
+   }
+
+   .checkbox-rect:active>.check-icon {
+    transform: rotate(45deg);    
+   }
+
+   .checkbox-rect input:checked ~.check-icon::before {    
+    display: block;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-image: url(../svg/checkmark.svg);
+   } 
+
+/*end of lesson 13*/ 
+
+   
 
 
 .column.col1 {

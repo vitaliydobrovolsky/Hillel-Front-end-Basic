@@ -19,6 +19,7 @@ html {
     border-bottom: solid 10px green; 
     margin-left: auto;    
     margin-right: auto;
+    position: relative;
 }
 
 h1 {
@@ -124,6 +125,38 @@ display: none;
 
 input::placeholder {
     padding: 12px 221px 12px 0px;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.preloader::after {
+    position: absolute;
+    top: 0  ;
+    bottom: 4%;
+    right: 0;
+    left: 0;
+    content: "";
+    display: block;
+    margin: auto;
+    height: 32px;
+    width: 32px;
+    border: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    border-top-color: cyan;;
+    border-bottom-color: cyan;;
+    border-left-color: blue;
+    border-right-color: cyan;
+    animation: rotating 1.2s linear infinite;
+
 }
 
 
