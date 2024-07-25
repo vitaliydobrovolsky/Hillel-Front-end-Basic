@@ -28,9 +28,8 @@
     margin-right: 45%;
 }
 
-.right_top {        
-    margin-bottom: 1.8%;        
-}
+   
+
 
 @font-face {
     font-family:"cera" ;
@@ -67,7 +66,7 @@
 .left_top {    
     background-color: #FBFBFB;    
     height: 46.57%;   
-    margin-left: 23px;
+    margin-left: 28px;
     
 }
 
@@ -131,6 +130,8 @@
 
     .left_bottom {
         width: 23.5vw;   
+        
+        
     }
     
     .clear-fix {
