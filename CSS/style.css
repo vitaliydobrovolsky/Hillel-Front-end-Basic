@@ -64,6 +64,13 @@ header::after {
 .header__top .header__ul-lang a {
   padding-right: 10px;
 }
+.header__top .header__ul-lang li:hover {
+  width: 33px;
+  height: 25px;
+  border-radius: 8px;
+  border: solid 1px;
+  background-color: rgb(104, 104, 135);
+}
 .header__top .header_ul-contacts {
   display: flex;
   padding-left: 10px;

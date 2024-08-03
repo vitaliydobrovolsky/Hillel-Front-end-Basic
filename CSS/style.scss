@@ -69,6 +69,14 @@ header::after {
         & a {
             padding-right: 10px;
         }
+
+        & li:hover {
+            width: 33px;
+            height: 25px;
+            border-radius: 8px;
+            border: solid 1px;
+            background-color: rgba(104, 104, 135, 1);
+        }
     }
     & .header_ul-contacts {
         display: flex;
