@@ -22,7 +22,7 @@
                     </ul>
                     <ul class="header_ul-contacts">
                         <li><a class="header__ul-top-link addr" href="#">Kyiv, Mechnikova str, 14/1</a></li>
-                        <li><a class="header__ul-top-link" href="tel:0800 211 927">0800 211 927</a></li>
+                        <li><a class="header__ul-top-link phone" href="tel:0800 211 927">0800 211 927</a></li>
                         <li><a class="header__ul-top-link fbl" href="https://www.facebook.com/" target="_blank">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__ul-top-link-facebooklogo">
                                 <g clip-path="url(#clip0_22721_6686)">
@@ -38,6 +38,19 @@
                    </ul>
                 </div>
                 <div class="header__top-logo-middle"><img src="svg/MainLogoWhite.svg" alt="MainLogo"></div>
+                <div class="header__menue">
+                    <div class="header__top-logo-services"><img src="svg/LogoServices.svg" alt="MainLogo"></div>
+                       <div class="header__menue-button active"><span></span></div>
+                       <div class="background">
+                          <nav class="header__menue-nav">
+                             <a class="header__menue-nav-list first" href="#">about us</a>
+                             <a class="header__menue-nav-list" href="#">services</a>
+                             <a class="header__menue-nav-list" href="#">team</a>
+                             <a class="header__menue-nav-list" href="#">publications</a>
+                             <a class="header__menue-nav-list" href="#">contacts</a>
+                          </nav> 
+                       </div>
+                   </div>
                    <nav class="header__nav-bottom">
                         <a class="header__nav-bottom-link" href="#">about us</a>
                         <a class="header__nav-bottom-link" href="#">services</a>
@@ -150,6 +163,11 @@
         </div>
     </main>
 
+
+    <script>
+        const button = document.querySelector(".header__menue-button");
+        button.addEventListener('click', () => button.classList.toggle('active'))
+    </script>
     
 </body>
 </html>

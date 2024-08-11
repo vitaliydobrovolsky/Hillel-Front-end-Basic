@@ -63,6 +63,13 @@ header::after {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    & .header__top-logo-services {
+        display: none;
+    }
+    & .header__menue-button {
+        display: none;
+    }
+    
     
     & .header__nav-bottom a {
         color: white; 
@@ -130,15 +137,8 @@ header::after {
     
     & .header__top-contacts {
             text-align: end;
-             & .header_ul-contacts {
-                & .header__ul-top-link.fbl {
-                    position: absolute ;
-                    top: 12.8%;
-                }
-                & .header__ul-top-link.fbl:hover>svg path {
-                    fill: rgba(240, 20, 90, 1);
-                 }
-            }
+            padding-right: 15px;
+             
     }
 
            
@@ -159,6 +159,47 @@ header::after {
             color: rgba(240, 20, 90, 1);
         }
      }
+     & .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;        
+        height: 667px;
+        width: 359px;
+        background-color: rgba(104, 104, 135, 1);
+        & .header__menue-nav {
+            height: 351px;
+            width: 335px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;            
+            transition: 0.5s ease-out; 
+            margin-top: 270px;
+            margin-left: 8px; 
+                  
+            & .header__menue-nav-list {
+                text-align: center;
+                height: 43px;
+                width: 315px;
+                color: rgba(36, 163, 255, 1);
+                font-size: 1.5rem;
+                list-style: none;
+                text-decoration: none;
+                font-weight: 700;
+                background-color: rgba(245, 245, 250, 1);
+                margin-bottom: 15px;
+                border-radius: 12px;
+                line-height: 29px;
+                padding-top: 7px;
+            }
+            & .header__menue-nav-list.first {
+                margin-top: 71px;
+            }
+         }
+     }
+     
   
     }
 
@@ -169,7 +210,7 @@ header::after {
         text-align: center;
         font-weight: 700;
         padding-bottom: 377px;
-        z-index: 10;
+        z-index: 1;
         position: relative;        
     }
 
@@ -565,31 +606,132 @@ header::after {
         }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
+    
     .header__top {
         display: inline-block;  
-        padding-bottom: 225px;      
+        padding-bottom: 147px;          
+        padding-top: 0px;
+        padding-left: 0px;
+      & .header__top-contacts-div {
+        height: 50px;
+        background: rgba(245, 245, 250, 0.2);
+        
+      }
       & .header__top-logo {
         display: none;
       }
       & .header__top-logo-middle {
-        display: block;
+        display: none;        
       }
-      & .header__nav-bottom {
-        text-align: start;
+      & .header__top-logo-services {
+        display: block;    
+        text-align: start; 
+        padding-left: 15px;   
+        }
+      
+      & .header__ul-lang {
+        margin-right:93px ;  
+        padding-left: 22px;     
+        padding-top: 15px;
+        padding-bottom: 15px;
       }
+      
       & .header__top-contacts {
          & .header_ul-contacts {
-            & .header__ul-top-link.fbl {
-                position: absolute ;
-                top: 10%;
+            list-style: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            & .header__ul-top-link.addr, .header__ul-top-link.fbl {
+                display: none;                                
+            } 
+            & .header__ul-top-link.phone {
+                white-space: nowrap;
             }
-         }
-      }
-      }
+                   
+          }
+       }
+       & .header__nav-bottom {
+        display: none;        
+       }      
+       
+       
+
+       .header__menue {
+        display: flex;
+        gap: 120px;
+        vertical-align: center;        
+        & .header__menue-button.active span {
+            background-color: transparent;
+           }
+        & .header__menue-button {
+            display: block;
+            width: 32px;    
+            height: 32px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            z-index: 2;            
+            & span {
+                display: block;
+                width: 18px;
+                height: 2px;
+                background-color: rgba(255, 255, 255, 1);
+                &::before  {
+                    content: '';
+                    width: 18px;
+                    height: 2px;
+                    position: absolute;
+                    background-color: white;
+                    transition: 0.5s ease-out;
+                    top: 7px;
+                    left: 0;
+                    }
+                &::after {
+                        content: '';
+                        width: 18px;
+                        height: 2px;
+                        position: absolute;
+                        background-color: white;
+                        transition: 0.5s ease-out; 
+                        bottom: 7px; 
+                        left: 0;
+                }  
+            }           
+           
+        }
+        & .header__menue-button.active {
+            position: absolute;
+            right: 25%;
+            top: 108%;
+            & span::after {
+                background-color: rgba(236, 111, 93, 1);
+            }
+            & span::before {
+                background-color: rgba(236, 111, 93, 1);
+            }
+            & span::before {
+              top: 15px;
+              transform: rotate(45deg);
+            }
+            & span::after {
+              bottom: 15px;
+              transform: rotate(-45deg);
+            }
+           & + .background {            
+            display: flex;            
+           }           
+          } 
+     }
+    }
+      
     .header__h1 {
         margin-bottom: 549px;
         padding-bottom: 0;
+        max-width: 315px;
+        text-align: center;
+        margin-left: 30px;
     }
 
     .header__hsymbol {
