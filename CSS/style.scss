@@ -251,7 +251,20 @@ header::after {
     height: 23px;
     border-radius: 8px;
     background-color:  rgba(104, 104, 135, 1);            
-    }    
+    }   
+    
+.header__menue::after {
+        display: none;
+        z-index: -2;
+        position: absolute;
+        right: 16.3%;
+        top: 30%;
+        content:'';
+        width: 33px;
+        height: 23px;
+        border-radius: 8px;
+        background-color:  rgba(230, 230, 240, 1);            
+}
 
 .header__ul-top-link.lang::after {
         display: none;
@@ -374,24 +387,96 @@ header::after {
      }
 }
 
-.main-top {
+.main__top {
     display: flex;
     height: 344px;
-    & .main-top__foto{
-        
-        
+    margin-left: 60px;
+    margin-top: 100px;    
+    & .main__top-foto{        
         & img {
             width: 100%;
+            height: 100%;
         }
-    }
-    & .main-top__description {
-        background-color: rgba(245, 245, 250, 1);
-        
-        
-    }
+       }
+    & .main__top-description {
+        background-color: rgba(245, 245, 250, 1);        
+        width: 920px;
+        padding-left: 30px; 
+        border-radius: 0 12px 12px  0;
+        & .space  {
+            padding-bottom: 30px;
+        }   
+        & .main__top-description-a {
+            text-decoration: none;       
+            color: rgba(36, 163, 255, 1);       
+            padding-bottom: 5px;
+            padding-top: 30px;
+            line-height: 17px;         
+            font-weight: 700;
+            letter-spacing: 1px;
+        &:hover {
+            color: rgba(240, 20, 90, 1);
+            stroke: rgba(240, 20, 90, 1);
+        }
+        &:hover>svg path {
+            stroke: rgba(240, 20, 90, 1);
+          }
+        }
+        & h3 {
+            font-size: 2.375rem ;
+            font-weight: 700;
+            line-height: 46px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            padding-top: 5px;
+            padding-bottom: 30px;
+        }
+        & .main__top-description-author {            
+            color: rgba(179, 179, 186, 1);
+            font-weight: 700;
+            line-height: 19.5px;
+            text-align: left;
+            padding-bottom: 6px;
+        }
+        & .main__top-description-position {
+            color: rgba(179, 179, 186, 1);
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+        }
+     }  
 }    
+.main__pagelist {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+      & .main__pagelist-div {          
+                background-color: rgba(36, 163, 255, 1);
+                content: '';                         
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                opacity: 20%;   
+                text-align: center;
+                vertical-align: top;
+                &:focus-within {
+                    opacity: 100%;
+                }
+                & .main__pagelist-div-a {
+                    opacity: 0;                    
+                }      
+     }
+  }
 
-      
+
+
+  /*Media*/    
 
 @media screen and (min-width: 1620px) {
     .header__top {
@@ -439,6 +524,25 @@ header::after {
         }
     }
 
+    .main__top {
+        display: flex;
+        height: 298px;
+        margin-left: 160px;
+        margin-top: 100px;    
+        & .main__top-foto{  
+            border-radius: 12px 0 0 12px;     
+             width: 400px;
+             background-image: url(../img/foto.png);
+             background-size: cover;
+             background-position: center;
+             & img {
+                display: none;
+             }
+           }
+        & .main__top-description {                   
+            width: 1200px;
+         }         
+      }
 }
 
 @media screen and (max-width: 1024px) {
@@ -520,6 +624,28 @@ header::after {
             margin-left: 40px;
             z-index: -3;        
         }
+        .main__top {
+            display: flex;
+            height: 528px;
+            margin-left: 60px;
+            margin-top: 100px;    
+            & .main__top-foto{  
+                border-radius: 12px 0 0 12px;     
+                 width: 400px;
+                 background-image: url(../img/foto.png);
+                 background-size: cover;
+                 background-position: center;
+                 & img {
+                    display: none;
+                 }
+               }
+            & .main__top-description {                   
+                width: 504px;
+                & h3 {
+                    padding-right: 30px;
+                }
+             }         
+          }
 }
 
 @media screen and (max-width: 768px) {
@@ -632,6 +758,28 @@ header::after {
             margin-left: 65px;
             z-index: -3;        
         }
+        .main__top {
+            display: inline-block;
+            
+            margin-left: 60px;
+            margin-top: 100px;    
+            & .main__top-foto{  
+                border-radius: 12px 0 0 12px;     
+                 width: 400px;
+                 background-image: url(../img/foto.png);
+                 background-size: cover;
+                 background-position: center;
+                 & img {
+                    display: none;
+                 }
+               }
+            & .main__top-description {                   
+                width: 504px;
+                & h3 {
+                    padding-right: 30px;
+                }
+             }         
+          }
 }
 
 @media screen and (max-width: 380px) {
@@ -701,7 +849,10 @@ header::after {
             display: flex;
             align-items: center;
             cursor: pointer;
-            z-index: 2;            
+            z-index: 2; 
+            &:hover>.header__menue::after {
+             display: block;
+            }           
             & span {
                 display: block;
                 width: 18px;
@@ -730,6 +881,7 @@ header::after {
             }           
            
         }
+        
         & .header__menue-button.active {
             position: absolute;
             right: 14%;
@@ -829,7 +981,7 @@ header::after {
  
          .header__button {
              position: absolute;
-             top: 13%;
+             top: 14%;
              left: 44%;
          }
 
