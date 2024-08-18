@@ -21,7 +21,7 @@ header {
 header::before {
     content: "";
     position: absolute;    
-    bottom: 0%;
+    bottom: 0.5%;
     width: 97.22%;   
     height: 1%;
     border: transparent;
@@ -49,7 +49,7 @@ header::after {
     display: flex;
     position: relative;
     justify-content: space-between;
-    padding: 50px 0 261px 60px;
+    padding: 50px 0 65px 60px;
     z-index: 10;
     & .header__top-contacts-div {
         display: flex;
@@ -204,42 +204,7 @@ header::after {
   
     }
 
-    .header__h1 {
-        font-size: 2.375rem;
-        line-height: 46px;
-        color: rgba(255, 255, 255, 1);
-        text-align: center;
-        font-weight: 700;
-        padding-bottom: 377px;
-        z-index: 1;
-        position: relative;        
-    }
-
-    .header__hsymbol {
-        position: absolute;
-        top: 0;
-        left: 27%;    
-        height: 800px;
-       
-    }
-
-    .header__button {
-        position: absolute;
-        top: 35%;
-        left: 48%;
-        
-        & .header__button-but {
-            background: none;
-            border: none;
-            &:hover>svg path {
-                stroke: rgba(240, 20, 90, 1);
-            }
-            &:hover>svg circle {
-                stroke: red;
-            }
-
-        }        
-    }
+    
 .header__ul-top-link.lang::before {
     display: none;
     z-index: -2;
@@ -287,72 +252,6 @@ header::after {
 }
 
 
- 
-.header__center-section {
-    padding-top: 74px;
-    display: flex;
-    justify-content: center;
-    & .header__center-section-left {
-        text-align: end;
-        border-right: solid 4px rgba(255, 255, 255, 0.3);
-            & h2 {
-            font-size: 2.375rem;
-            line-height: 46.32px;
-            font-weight: 700;
-            color: rgba(179, 179, 186, 1);
-            padding-right: 60px;
-            padding-bottom: 30px;
-        }
-        & .header__center-section-left__h2.one {
-        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;        
-        }   
-        & h2:hover {
-            color: rgba(240, 20, 90, 1);
-        }
-        
-    }
-
-    & .header__center-section-right {
-        padding-left: 60px;
-        max-width: 620px;
-        padding-bottom: 60px;
-        & h3 {
-            color: rgba(255, 255, 255, 1);
-            font-size: 1.875rem;
-            font-weight: 700;
-            line-height: 36px;
-            padding-bottom: 30px ;
-            padding-top: 43px;
-        }
-        & p {
-            color: rgba(255, 255, 255, 1);
-            font-size: 1.187rem;
-            line-height: 30px;
-            font-weight: 400;
-        }
-    }
-}
-
-.header__a-services {
-    text-decoration: none;       
-    color: rgba(36, 163, 255, 1);
-    padding: 0 0 10px 60px;
-    line-height: 17px;
-    vertical-align: top;
-    font-weight: 700;
-    letter-spacing: 1px;
-    &:hover {
-        color: rgba(240, 20, 90, 1);
-        stroke: rgba(240, 20, 90, 1);
-    }
-    &:hover>svg path {
-        stroke: rgba(240, 20, 90, 1);
-    }
-
-}
-
 .header__h2 {
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
         -webkit-background-clip: text;
@@ -392,6 +291,7 @@ header::after {
 }
 
 main {
+ background-color: rgba(255, 255, 255, 1);
   & .main__top {
     display: flex;
     height: 344px;
@@ -1508,7 +1408,6 @@ footer {
             z-index: -3;        
         }
         main {
-            background-color: rgba(255, 255, 255, 1);
         & .main__top {
             height: 1087px;
             width: 315px;            
