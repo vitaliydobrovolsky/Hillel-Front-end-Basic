@@ -350,6 +350,11 @@ header::after {
   line-height: 27px;
   color: rgb(36, 163, 255);
 }
+.header__bottom .header__bottom-div .header__bottom-div-h4:hover {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .header__bottom .header__bottom-div .header__bottom-div-p {
   color: rgb(255, 255, 255);
   line-height: 26px;
